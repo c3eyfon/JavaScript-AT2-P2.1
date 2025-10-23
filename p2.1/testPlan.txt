@@ -1,0 +1,31 @@
+File: AT2-part2-1.html
+Desc : Sequential & Binary Search Functional Test Plan
+Author: Yan
+Date : 2025-10-19
+Modified: 
+
+1. Objective and Scope
+ - To test if both sequentialSearch & binarySearch functions behave as expected with test inputs
+
+2. Test Data
+ - The test will be conducted with sample numeric array and valid/invalid number values as provided below
+ - numAry = [11, 5, 8, 3, 25, 16, 31, 45, 14, 20]
+ - valueToFind : 25
+ - valueToFind : 2
+
+3. Test Cases
+ - Tests Cases format as the following caseID-Function-Description-Input-Expected Result(Index of valid target / -1 for invalid)
+
+ - case01 - sequentialSearch - search number value in sequetial order - valueToFind : 25 - 5
+
+ - case02 - sequentialSearch - search number value in sequetial order - valueToFind : 2 - -1
+
+ - case03 - sequentialSearch - search number value in binary order - valueToFind : 25 - 5
+
+  - case04 - sequentialSearch - search number value in binary order - valueToFind : 2 - -1
+
+4. Pass/Fail Criteria
+ - Function returns correct value or correct error
+
+5. Testing Tool
+ - Testing Framework: Jest
