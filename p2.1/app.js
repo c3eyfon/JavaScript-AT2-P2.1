@@ -8,11 +8,13 @@ function sortAry(a, b) {
 numAry.sort(sortAry);
 console.log(numAry);
 
-function addIntoAry(arr, addValue) {
-  return arr.push(addValue);
+function addIntoAry(arr, ...addValue) {
+  arr.push(...addValue);
+  arr.sort((a, b) => a - b);
+  return arr;
 };
-let newAddArr = addIntoAry(numAry, (19,23,30));
-console.log(newAddArr);
+
+console.log(addIntoAry(numAry, 19,23,30));
 
 function numRemove(arr, numValue) {
   return arr.filter(function (a) {
